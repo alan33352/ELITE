@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ELITE | Ropa Urbana</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🔽 Slider bajado con margen -->
+<div class="slider-container">
+  <div class="slider" id="slider">
+    <div class="slide slide1"></div>
+    <div class="slide slide2"></div>
+  </div>
+</div>
+
+<!-- Barra promoción -->
+<div class="barra-promocion">
+  <div class="texto-movimiento">💳 3 CUOTAS SIN INTERÉS A PARTIR DE $100.000 | 🚚 ENVIOS A TODO EL PAÍS 🖤 @eite.arg 💳</div>
+</div>
+
+<!-- Barra principal -->
+<div class="barra-principal">
+  <div class="contenedor-barra">
+    <div class="icono izquierda">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="70" fill="white" viewBox="0 0 24 24">
+        <path d="M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+      </svg>
+    </div>
+
+    <div class="icono derecha">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+        <path d="M6 7V6a6 6 0 1112 0v1h1a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V8a1 1 0 011-1h1zm2 0h8V6a4 4 0 00-8 0v1z"/>
+      </svg>
+      <span class="contador">0</span>
+    </div>
+  </div>
+
+  <div class="botones-categorias">
+    <button>Ropa 2025</button>
+    <button>Remeras</button>
+    <button>Abrigos</button>
+    <button>Accesorios</button>
+  </div>
+</div>
+
+<!-- 🔽 Botones de flecha -->
+<div class="paginacion-slider">
+  <button class="flecha" onclick="cambiarSlide(-1)">←</button>
+  <span id="indicador-slide">1 / 2</span>
+  <button class="flecha" onclick="cambiarSlide(1)">→</button>
+</div>
+
+<!-- Catálogo -->
+<section class="catalogo">
+  <h2>Catálogo 2025</h2>
+  <div class="productos">
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x400" alt="Remera">
+      <h3>Remera Oversize</h3>
+      <p>$25.000</p>
+      <button>Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x400" alt="Buzo">
+      <h3>Buzo Canguro</h3>
+      <p>$45.000</p>
+      <button>Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x400" alt="Campera">
+      <h3>Campera Urban</h3>
+      <p>$90.000</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Carga el JS al final -->
+<script src="slider.js"></script>
+</body>
+</html>
